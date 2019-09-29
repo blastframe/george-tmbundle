@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>grg</string>
+	</array>
+	<key>name</key>
+	<string>George</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment highlighting.</string>
+			<key>match</key>
+			<string>\/\/.*$</string>
+			<key>name</key>
+			<string>comment.line.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>#INCLUDE.*$</string>
+			<key>name</key>
+			<string>keyword.control.import.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>,</string>
+			<key>name</key>
+			<string>constant.character.separator.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0x\h*)L)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.long.hexadecimal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0x\h*))</string>
+			<key>name</key>
+			<string>constant.numeric.integer.hexadecimal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0o?[0-7]+)L)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.long.octal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0o?[0-7]+))</string>
+			<key>name</key>
+			<string>constant.numeric.integer.octal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0b[01]+)L)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.long.binary.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(0b[01]+))</string>
+			<key>name</key>
+			<string>constant.numeric.integer.binary.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(((\d+(\.(?=[^a-zA-Z_])\d*)?|(?&lt;=[^0-9a-zA-Z_])\.\d+)(e[\-\+]?\d+)?))J)</string>
+			<key>name</key>
+			<string>constant.numeric.complex.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(\d+\.\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
+			<key>name</key>
+			<string>constant.numeric.float.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=[^0-9a-zA-Z_])(?i =(\.\d+(e[\-\+]?\d+)?))</string>
+			<key>name</key>
+			<string>constant.numeric.float.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =(\d+e[\-\+]?\d+))</string>
+			<key>name</key>
+			<string>constant.numeric.float.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i =([1-9]+[0-9]*|0)L)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.long.decimal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([1-9]+[0-9]*|0)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.decimal.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b\w*if\b|\b\w*else\b|\b\w*while\b|\b\w*do\b|\b\w*until\b|\b\w*for\b|\b\w*return\b|\b\w*end\b</string>
+			<key>name</key>
+			<string>keyword.control.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b\w*None\b</string>
+			<key>name</key>
+			<string>constant.language.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b\w*ABS\b|\b\w*ACOS\b|\b\w*ASIN\b|\b\w*ATAN\b|\b\w*BREAK\b|\b\w*CHAR\b|\b\w*CMP\b|\b\w*COS\b|\b\w*CUT\b|\b\w*DATE\b|\b\w*EXIT\b|\b\w*LEN\b|\b\w*MAX\b|\b\w*MIN\b|\b\w*PARSE\b|\b\w*PAUSE\b|\b\w*PRINT\b|\b\w*RND\b|\b\w*SIN\b|\b\w*SQR\b|\b\w*TAN\b|\b\w*TIME\b|\b\w*TRUNC\b|\b\w*VERSION\b</string>
+			<key>name</key>
+			<string>support.function.george</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>';
+	        end = '</string>
+			<key>name</key>
+			<string>string.quoted.single.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b\w*PARAM\b|\b\w*FUNCTION\b|\b\w*INT\b|\b\w*VAR\b|\b\w*LOCAL\b|\b\w*RESULT\b|\b\w*text\b|\b\w*frame\b|\b\w*file\b|\b\w*path\b</string>
+			<key>name</key>
+			<string>storage.type.george</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\+|\-|\*|\*\*|/|//|%|&lt;&lt;|&gt;&gt;|&amp;|\||\^|~</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\=</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&lt;\=|&gt;\=|\=\=|&lt;|&gt;|\!\=</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.george</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b\w*tv_addbookmarks\b|\b\w*tv_airbrush\b|\b\w*tv_airpower\b|\b\w*tv_alphaloadmode\b|\b\w*tv_alphasavemode\b|\b\w*tv_areadraw\b|\b\w*tv_areagradientvector\b|\b\w*tv_areainit\b|\b\w*tv_areamove\b|\b\w*tv_background\b|\b\w*tv_beep\b|\b\w*tv_blend\b|\b\w*tv_bookmarkclear\b|\b\w*tv_bookmarknext\b|\b\w*tv_bookmarkprev\b|\b\w*tv_bookmarksenum\b|\b\w*tv_bookmarkset\b|\b\w*tv_bookmarktoggle\b|\b\w*tv_brushcut\b|\b\w*tv_brushfromclipboard\b|\b\w*tv_brushinfo\b|\b\w*tv_brushoutline\b|\b\w*tv_brushpoly\b|\b\w*tv_brushpower\b|\b\w*tv_brushrestore\b|\b\w*tv_brushrotate\b|\b\w*tv_brushstretch\b|\b\w*tv_brushtoclipboard\b|\b\w*tv_bump\b|\b\w*tv_cameraenumpoints\b|\b\w*tv_camerainfo\b|\b\w*tv_camerainsertpoint\b|\b\w*tv_camerainterpolation\b|\b\w*tv_camerapath\b|\b\w*tv_cameraremovepoint\b|\b\w*tv_camerasetpoint\b|\b\w*tv_circle\b|\b\w*tv_circlefill\b|\b\w*tv_clear\b|\b\w*tv_clipaction\b|\b\w*tv_clipboardsize\b|\b\w*tv_clipclose\b|\b\w*tv_clipcolor\b|\b\w*tv_clipcurrentid\b|\b\w*tv_clipdialog\b|\b\w*tv_clipduplicate\b|\b\w*tv_clipenumid\b|\b\w*tv_cliphidden\b|\b\w*tv_clipinfo\b|\b\w*tv_clipmove\b|\b\w*tv_clipname\b|\b\w*tv_clipnew\b|\b\w*tv_clipnote\b|\b\w*tv_clipsavestructure\b|\b\w*tv_clipselect\b|\b\w*tv_clipselection\b|\b\w*tv_cmd\b|\b\w*tv_colorfactory\b|\b\w*tv_connexionsettings\b|\b\w*tv_convolve33\b|\b\w*tv_convolve55\b|\b\w*tv_copytoconfig\b|\b\w*tv_crazyblur\b|\b\w*tv_custommode\b|\b\w*tv_cutbrush\b|\b\w*tv_densitylinex\b|\b\w*tv_densityliney\b|\b\w*tv_densitymodex\b|\b\w*tv_densitymodey\b|\b\w*tv_densityoff\b|\b\w*tv_densityon\b|\b\w*tv_densityx\b|\b\w*tv_densityy\b|\b\w*tv_display\b|\b\w*tv_dot\b|\b\w*tv_drawsmoothing\b|\b\w*tv_ellipse\b|\b\w*tv_ellipsefill\b|\b\w*tv_eraserbrush\b|\b\w*tv_exposureadd\b|\b\w*tv_exposurebreak\b|\b\w*tv_exposurefauxfixe\b|\b\w*tv_exposureinfo\b|\b\w*tv_exposurenext\b|\b\w*tv_exposureprev\b|\b\w*tv_exposureset\b|\b\w*tv_fastline\b|\b\w*tv_fieldcopy\b|\b\w*tv_fielddouble\b|\b\w*tv_fileinfo\b|\b\w*tv_fill\b|\b\w*tv_filter\b|\b\w*tv_firstimage\b|\b\w*tv_fixmotion\b|\b\w*tv_flipimagex\b|\b\w*tv_flipimagey\b|\b\w*tv_flipsadd\b|\b\w*tv_flipsenum\b|\b\w*tv_flipsmodify\b|\b\w*tv_flipsremove\b|\b\w*tv_flipx\b|\b\w*tv_flipy\b|\b\w*tv_framerate\b|\b\w*tv_gauge\b|\b\w*tv_gblur\b|\b\w*tv_getactiveshape\b|\b\w*tv_getactivetool\b|\b\w*tv_getapen\b|\b\w*tv_getbpen\b|\b\w*tv_getdisplay\b|\b\w*tv_getdrawmode\b|\b\w*tv_getfield\b|\b\w*tv_getheight\b|\b\w*tv_gethostpath\b|\b\w*tv_getlanguage\b|\b\w*tv_getmodifiers\b|\b\w*tv_getmouse\b|\b\w*tv_getpalette\b|\b\w*tv_getpath\b|\b\w*tv_getpixel\b|\b\w*tv_getpixeldisplay\b|\b\w*tv_getpixellayer\b|\b\w*tv_getprojectname\b|\b\w*tv_gettemppath\b|\b\w*tv_getuser\b|\b\w*tv_getwidth\b|\b\w*tv_ghostline\b|\b\w*tv_grab\b|\b\w*tv_guidelineadd\b|\b\w*tv_guidelineassist\b|\b\w*tv_guidelinecollapse\b|\b\w*tv_guidelinecolor\b|\b\w*tv_guidelineenum\b|\b\w*tv_guidelinemarge\b|\b\w*tv_guidelinemodify\b|\b\w*tv_guidelinename\b|\b\w*tv_guidelineremove\b|\b\w*tv_guidelinesnap\b|\b\w*tv_guidelinevisible\b|\b\w*tv_handle\b|\b\w*tv_healingsource\b|\b\w*tv_host2back\b|\b\w*tv_host2front\b|\b\w*tv_imagefromclipboard\b|\b\w*tv_imagegetbound\b|\b\w*tv_imagepop\b|\b\w*tv_imagepush\b|\b\w*tv_imagetoclipboard\b|\b\w*tv_infobar\b|\b\w*tv_instancegetname\b|\b\w*tv_instancename\b|\b\w*tv_instancesetname\b|\b\w*tv_lastimage\b|\b\w*tv_layeranim\b|\b\w*tv_layerautobreakinstance\b|\b\w*tv_layerautocreateinstance\b|\b\w*tv_layerblendingmode\b|\b\w*tv_layercollapse\b|\b\w*tv_layercolor\b|\b\w*tv_layercompareimage\b|\b\w*tv_layercopy\b|\b\w*tv_layercreate\b|\b\w*tv_layercurrentid\b|\b\w*tv_layercut\b|\b\w*tv_layerdensity\b|\b\w*tv_layerdisplay\b|\b\w*tv_layerduplicate\b|\b\w*tv_layerfetch\b|\b\w*tv_layergetid\b|\b\w*tv_layergetimage\b|\b\w*tv_layergetpos\b|\b\w*tv_layerhold\b|\b\w*tv_layerimage\b|\b\w*tv_layerinfo\b|\b\w*tv_layerinsertimage\b|\b\w*tv_layerinvert\b|\b\w*tv_layerkill\b|\b\w*tv_layerloaddependencies\b|\b\w*tv_layerlock\b|\b\w*tv_layerlockposition\b|\b\w*tv_layermarkget\b|\b\w*tv_layermarkset\b|\b\w*tv_layermerge\b|\b\w*tv_layermergeall\b|\b\w*tv_layermove\b|\b\w*tv_layerpaste\b|\b\w*tv_layerpostbehavior\b|\b\w*tv_layerprebehavior\b|\b\w*tv_layerrecomputeexposure\b|\b\w*tv_layerrename\b|\b\w*tv_layerselect\b|\b\w*tv_layerselectinfo\b|\b\w*tv_layerselection\b|\b\w*tv_layerset\b|\b\w*tv_layershift\b|\b\w*tv_layershowthumbnails\b|\b\w*tv_layerstencil\b|\b\w*tv_layerstretch\b|\b\w*tv_libraryimageadd\b|\b\w*tv_libraryimagecopy\b|\b\w*tv_libraryimageinfo\b|\b\w*tv_libraryimagelist\b|\b\w*tv_libraryimagemodify\b|\b\w*tv_libraryimagepaste\b|\b\w*tv_libraryimageremove\b|\b\w*tv_lighttablemode\b|\b\w*tv_line\b|\b\w*tv_listrequest\b|\b\w*tv_loadbrush\b|\b\w*tv_loadbrushanim\b|\b\w*tv_loadimage\b|\b\w*tv_loadpalette\b|\b\w*tv_loadproject\b|\b\w*tv_loadsequence\b|\b\w*tv_loadspare\b|\b\w*tv_lockcacheflush\b|\b\w*tv_lockdisplay\b|\b\w*tv_lockmouse\b|\b\w*tv_lockuser\b|\b\w*tv_magicnumber\b|\b\w*tv_markin\b|\b\w*tv_markout\b|\b\w*tv_menuhide\b|\b\w*tv_menushow\b|\b\w*tv_mosaic\b|\b\w*tv_no_croptool\b|\b\w*tv_no_cutbrushtool\b|\b\w*tv_no_filltool\b|\b\w*tv_no_selecttool\b|\b\w*tv_noise\b|\b\w*tv_nop\b|\b\w*tv_noteblitimage\b|\b\w*tv_notelock\b|\b\w*tv_noterect\b|\b\w*tv_notetext\b|\b\w*tv_oilbrush\b|\b\w*tv_panning\b|\b\w*tv_pantoset\b|\b\w*tv_paper\b|\b\w*tv_paperenum\b|\b\w*tv_paperfrombrush\b|\b\w*tv_paperinfo\b|\b\w*tv_pegholesapply\b|\b\w*tv_pegholesset\b|\b\w*tv_pen\b|\b\w*tv_penbrush\b|\b\w*tv_pencil\b|\b\w*tv_perswrap\b|\b\w*tv_piccolor\b|\b\w*tv_pixelmatrix\b|\b\w*tv_plugin\b|\b\w*tv_pointpower\b|\b\w*tv_preserve\b|\b\w*tv_projectclose\b|\b\w*tv_projectcurrentframe\b|\b\w*tv_projectcurrentid\b|\b\w*tv_projectduplicate\b|\b\w*tv_projectenumid\b|\b\w*tv_projectheaderauthor\b|\b\w*tv_projectheaderinfo\b|\b\w*tv_projectheadernotes\b|\b\w*tv_projectinfo\b|\b\w*tv_projectnew\b|\b\w*tv_projectrendercamera\b|\b\w*tv_projectsavedependencies\b|\b\w*tv_projectsavesequence\b|\b\w*tv_projectselect\b|\b\w*tv_propelling\b|\b\w*tv_quit\b|\b\w*tv_rangec\b|\b\w*tv_rangeclear\b|\b\w*tv_rangegrab\b|\b\w*tv_rangenoise\b|\b\w*tv_rangeoff\b|\b\w*tv_rangeon\b|\b\w*tv_rangeset\b|\b\w*tv_rangev\b|\b\w*tv_ratio\b|\b\w*tv_readclipstring\b|\b\w*tv_readprojectstring\b|\b\w*tv_readtextfile\b|\b\w*tv_readuserstring\b|\b\w*tv_reapply\b|\b\w*tv_recorder\b|\b\w*tv_rect\b|\b\w*tv_rectfill\b|\b\w*tv_redo\b|\b\w*tv_reqangle\b|\b\w*tv_reqfile\b|\b\w*tv_reqfloat\b|\b\w*tv_reqnum\b|\b\w*tv_reqstring\b|\b\w*tv_request\b|\b\w*tv_resetdisplay\b|\b\w*tv_resizepage\b|\b\w*tv_restorebrush\b|\b\w*tv_runscript\b|\b\w*tv_savebrush\b|\b\w*tv_savebrushanim\b|\b\w*tv_saveclip\b|\b\w*tv_savedisplay\b|\b\w*tv_saveimage\b|\b\w*tv_savemode\b|\b\w*tv_savepalette\b|\b\w*tv_saveproject\b|\b\w*tv_savesequence\b|\b\w*tv_sceneclose\b|\b\w*tv_scenecurrentid\b|\b\w*tv_sceneduplicate\b|\b\w*tv_sceneenumid\b|\b\w*tv_scenemove\b|\b\w*tv_scenenew\b|\b\w*tv_selectionmask\b|\b\w*tv_selectshapetool\b|\b\w*tv_serialnumber\b|\b\w*tv_setactiveshape\b|\b\w*tv_setapen\b|\b\w*tv_setbpen\b|\b\w*tv_setcolor\b|\b\w*tv_setdrawmode\b|\b\w*tv_setpalette\b|\b\w*tv_shadow\b|\b\w*tv_smooth\b|\b\w*tv_smoothdensity\b|\b\w*tv_smoothedge\b|\b\w*tv_soundclipadjust\b|\b\w*tv_soundclipinfo\b|\b\w*tv_soundclipnew\b|\b\w*tv_soundclipreload\b|\b\w*tv_soundclipremove\b|\b\w*tv_soundprojectadjust\b|\b\w*tv_soundprojectinfo\b|\b\w*tv_soundprojectnew\b|\b\w*tv_soundprojectreload\b|\b\w*tv_soundprojectremove\b|\b\w*tv_spareadddensity\b|\b\w*tv_sparecopy\b|\b\w*tv_sparekill\b|\b\w*tv_sparesubdensity\b|\b\w*tv_spareswap\b|\b\w*tv_sparetoback\b|\b\w*tv_sparetofront\b|\b\w*tv_specialbrush\b|\b\w*tv_speed\b|\b\w*tv_speedfillbrush\b|\b\w*tv_speedfilleraser\b|\b\w*tv_stackaddtobin\b|\b\w*tv_stackapply\b|\b\w*tv_stackclear\b|\b\w*tv_stackclose\b|\b\w*tv_stackexecute\b|\b\w*tv_stackexecutebin\b|\b\w*tv_stackload\b|\b\w*tv_stackloadbin\b|\b\w*tv_stackopen\b|\b\w*tv_stackpreview\b|\b\w*tv_stacksave\b|\b\w*tv_stacksavebin\b|\b\w*tv_startframe\b|\b\w*tv_strokepoint\b|\b\w*tv_strokesize\b|\b\w*tv_stylusonly\b|\b\w*tv_systextbrush\b|\b\w*tv_tcmode\b|\b\w*tv_text\b|\b\w*tv_textbrush\b|\b\w*tv_texttool\b|\b\w*tv_texttool2\b|\b\w*tv_tornado\b|\b\w*tv_undo\b|\b\w*tv_undoclosestack\b|\b\w*tv_undoopenstack\b|\b\w*tv_unlockcacheflush\b|\b\w*tv_unlockdisplay\b|\b\w*tv_unlockmouse\b|\b\w*tv_unlockuser\b|\b\w*tv_updateundo\b|\b\w*tv_version\b|\b\w*tv_vfborder\b|\b\w*tv_vfbordercolor\b|\b\w*tv_vfgetfont\b|\b\w*tv_vfgetscript\b|\b\w*tv_vfgetstyle\b|\b\w*tv_vfglow\b|\b\w*tv_vfglowcolor\b|\b\w*tv_vfitalic\b|\b\w*tv_vfoutline\b|\b\w*tv_vfrotate\b|\b\w*tv_vfscale\b|\b\w*tv_vfsetfont\b|\b\w*tv_vfsize\b|\b\w*tv_vfsmooth\b|\b\w*tv_vfspace\b|\b\w*tv_vfstringsize\b|\b\w*tv_vftracking\b|\b\w*tv_videodevice\b|\b\w*tv_waitbutton\b|\b\w*tv_warn\b|\b\w*tv_warpbrush\b|\b\w*tv_wave\b|\b\w*tv_wetbrush\b|\b\w*tv_wrapx\b|\b\w*tv_wrapy\b|\b\w*tv_writeclipstring\b|\b\w*tv_writepixel\b|\b\w*tv_writeprojectstring\b|\b\w*tv_writetextfile\b|\b\w*tv_writeuserstring\b|\b\w*tv_zdot\b|\b\w*tv_zline\b|\b\w*tv_zspline\b</string>
+			<key>name</key>
+			<string>support.function.george</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.george</string>
+	<key>uuid</key>
+	<string>1F2447B3-6439-450F-9E42-156AFF844716</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>xriva@oynfgsenzr.pbz</string>
+	<key>contactName</key>
+	<string>Kevin C. Burke</string>
+	<key>description</key>
+	<string>TVPaint George language Package for TextMate
+
+&lt;a href="https://wiki.tvpaint.com/index.php?title=George"&gt;George Wiki&lt;/a&gt;</string>
+	<key>name</key>
+	<string>George</string>
+	<key>uuid</key>
+	<string>11D7EFC8-7EF9-4C38-9B1C-0734155CEFE5</string>
+</dict>
+</plist>
